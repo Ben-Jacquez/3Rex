@@ -1,0 +1,21 @@
+#header-box {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: black;
+    font-weight: bolder;
+    font-size: 10px;
+    width: 100%;
+    /* text-shadow: 2px 2px rgb(86, 84, 84); */
+    background-color: rgb(255, 255, 255);
+}
+
+.logo{
+    width: 100px;
+        }
+    
+.logo img{
+    float: left;
+    margin-left: 100px;
+
+    }
