@@ -35,7 +35,7 @@
         flex: auto;
         font-size: 40px;
         padding-top: 100px;
-        margin-left: 100px;
+        margin-left: 150px;
     }
 
     .body-text {
@@ -54,8 +54,7 @@
 }
 
 .dropdown {
-    justify-content: space-around;
-    padding: 60px 40px;
+    padding: 20px 40px;;
 }
 
 .dropdown-toggle {
@@ -83,6 +82,19 @@
 .carousel-item{
     background-color: aqua;
 }
+
+.carousel-slide {
+    width:640px;
+  height:360px;
+}
+  
+  .d-block {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height:350px;
+      
+  }
 
 @media only screen and (min-width: 500px) {
     /* For phone: */
