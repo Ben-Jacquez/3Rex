@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+#header-box {
+    display: flex;
+    text-decoration: black;
+    font-size: 10px;
+    width: 100%;
+    /* text-shadow: 2px 2px rgb(86, 84, 84); */
+    background-color: rgb(175, 46, 46);
+    flex-direction: row;
+    margin-bottom: 0;
+}
+
+.logo {
+    margin-bottom: 0;
+}  
+
+.logo img {
+    float: left;
+    margin-left: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+
+.disney img {
+    margin-left: 750px;
+}
+
+#nav-home {
+    /* float: right; */
+    font-size: 30px;
+    position:absolute;
+    right:0;
+    top: 20px;
+    margin-right: 150px;
+    color: rgb(255, 255, 255);
+    }
+
+   

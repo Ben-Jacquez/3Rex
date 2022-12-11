@@ -1,0 +1,33 @@
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    min-width: 150px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    color: #464646;
+    transition: all .3s;
+    transform: translate(-100%);
+  }
+  
+  .dropdown-menu.open {
+    transform: translate(0%);
+  }
+  
+  .btn-group {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .dropdown-menu li {
+    margin: 5px;
+    cursor: pointer;
+  }
