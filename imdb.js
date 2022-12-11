@@ -15,7 +15,7 @@ fetch('https://online-movie-database.p.rapidapi.com/auto-complete?q=bullet%20tra
         list.map((item) => {
             const name = item.l;
             const poster = item.i.imageurl;
-            const movie = `<li><img src="${poster}"> <h2>${name}</h2></li>`
+            const movie = `<li><img src="${poster}"> <h2>${name}</h2></li>`;
             document.querySelector('.movies').innerHTML += movie;
 
         })
