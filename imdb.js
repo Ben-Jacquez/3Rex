@@ -23,3 +23,5 @@ fetch('https://online-movie-database.p.rapidapi.com/auto-complete?q=bullet%20tra
     .catch(err => {
         console.error(err);
     });
+
+    ()

@@ -10,3 +10,5 @@ fetch('https://online-movie-database.p.rapidapi.com/auto-complete?q=bullet%20tra
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err)):
+
+	
