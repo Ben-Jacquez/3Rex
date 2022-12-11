@@ -1,5 +1,5 @@
 var homeButton = document.querySelector(".btn");
-var homePageUrl = "/Users/saraangelo/Desktop/ucla-bootcamp/projects/3Rex/index.html"
+var homePageUrl = "index.html"
 
 // opens homepage in same window
 function goHome (){
