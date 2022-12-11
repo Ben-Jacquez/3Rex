@@ -9,3 +9,4 @@ function goHome (){
 
 // event listener 
 homeButton.addEventListener("click", goHome);
+
