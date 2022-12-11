@@ -24,9 +24,10 @@ body {
     margin-bottom: 10px;
     }
 
-.netflix img {
-    margin-left: 750px;
-}
+    .netflix {
+        display: flex;
+        justify-content: center;
+    }
 
 #nav-home {
     /* float: right; */

@@ -24,10 +24,11 @@ body {
     margin-bottom: 10px;
     }
 
-.disney img {
-    margin-left: 750px;
-}
-
+    .disney {
+        display: flex;
+        justify-content: center;
+    }
+    
 #nav-home {
     /* float: right; */
     font-size: 30px;
