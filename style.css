@@ -64,13 +64,13 @@ body {
 
 .dropdown-toggle {
     width: 80%;
-    background-color: rgb(175, 46, 46);
+    background-color: rgb(45, 170, 0);
     padding: 10px;
     font-size: 20px;
     
 }
 .dropdown-toggle:hover {
-    background-color: rgb(210, 57, 57);
+    background-color: rgba(160, 213, 140, 0.987);
 }
 
 .dropdown-item {
@@ -80,7 +80,7 @@ body {
 }
 
 .dropdown-item:hover {
-    background-color: rgb(228, 141, 141);
+    background-color: rgba(160, 213, 140, 0.987);
 
 }
 
