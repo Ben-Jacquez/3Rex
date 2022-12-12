@@ -1,9 +1,9 @@
-$('.dropdown-toggle').dropdown();
+// $('.dropdown-toggle').dropdown();
 
-$(document).ready(function(){
-    $(".dropdown-toggle").dropdown();
-    console.log($('.dropdown-toggle'))
-  });
+// $(document).ready(function(){
+//     $(".dropdown-toggle").dropdown();
+//     console.log($('.dropdown-toggle'))
+//   });
 
 
   var comedyClick = document.querySelector(".comedy");
