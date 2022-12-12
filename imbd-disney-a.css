@@ -46,6 +46,10 @@ body {
     color: rgb(255, 255, 255);
     }
 
+    .movie-poster1 {
+        margin-top: 20px;
+    }
+
     .btn-light{
         color: white;
         background-color: rgb(63, 101, 199);
