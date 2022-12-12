@@ -43,9 +43,9 @@
       <div class="col m-5 p-2 banana">
         <div class="card" style="width: 18rem">
 
-          <img src="images/3REX.png" class="card-img-top" alt="..." />
+          <div class="movie-poster1"></div>
           <div class="card-body">
-            <h5 class="card-title" id="black-panther">Movie title</h5>
+            <h5 class="card-title movie-title1" id="black-panther">Movie title</h5>
             <p class="card-text">Paragraph: IMDb movie info.</p>
 
             <a href="#trailer1" class="btn btn-light">Watch Trailer</a>
@@ -57,9 +57,10 @@
       <!-- CARD CONTAINER 2 -->
       <div class="col m-5 p-2">
         <div class="card" style="width: 18rem">
-          <img src="images/3REX.png" class="card-img-top" alt="..." />
+
+          <div class="movie-poster2"></div>
           <div class="card-body">
-            <h5 class="card-title" id="avengers-endgame">Movie title</h5>
+            <h5 class="card-title movie-title2" id="avengers-endgame">Movie title</h5>
             <p class="card-text">Paragraph: IMDb movie info.</p>
 
             <a href="#trailer2" class="btn btn-light">Watch Trailer</a>
@@ -70,9 +71,10 @@
       <!-- CARD CONTAINER 3 -->
       <div class="col m-5 p-2">
         <div class="card" style="width: 18rem">
-          <img src="images/3REX.png" class="card-img-top" alt="..." />
+          
+          <div class="movie-poster3"></div>
           <div class="card-body">
-            <h5 class="card-title" id="the-incredibles">Movie title</h5>
+            <h5 class="card-title movie-title3" id="the-incredibles">Movie title</h5>
             <p class="card-text">Paragraph: IMDb movie info.</p>
 
             <a href="#trailer3" class="btn btn-light">Watch Trailer</a>
@@ -149,8 +151,19 @@
   <div id="answer2"></div>
   <div id="answer3"></div>
 
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>
+
+var moviePoster1=document.querySelector(".movie-poster1");
+var moviePoster2=document.querySelector(".movie-poster2");
+var moviePoster3=document.querySelector(".movie-poster3");
+var movieTitle1=document.querySelector(".movie-title1");
+var movieTitle2=document.querySelector(".movie-title2");
+var movieTitle3=document.querySelector(".movie-title3");
+
+
+
     var data;
     function getanswer(q) {
       $.get("https://www.omdbapi.com/?s=" + q + "&apikey=443e02", function (rawdata) {
@@ -160,9 +173,10 @@
         var year = data.Search[0].Year;
         var imdburl = "https://imdb.com/title/" + data.Search[0].imdbID + "/";
         var posterurl = data.Search[0].Poster;
-        document.getElementById("answer").innerHTML = "<h1>" + title + "</h1><br><img src='" + posterurl + "/><br<p>Year Released: "
-          + year + "</p><br><p>IMDb page: <a href=" + imdburl + " target='_blank'>" + "</a></p>";
-        document.getElementById("movie-title1").innerHTML = "<h1>" + title + "</h1>"
+        // document.getElementById("answer").innerHTML = "<h1>" + title + "</h1><br><img src='" + posterurl + "/><br<p>Year Released: "
+        //   + year + "</p><br><p>IMDb page: <a href=" + imdburl + " target='_blank'>" + "</a></p>";
+        moviePoster1.innerHTML=`<img src="${posterurl}" alt="test"/>`;
+        movieTitle1.textContent= title;
       })
     }
     function getanswer2(q) {
@@ -173,8 +187,10 @@
         var year = data.Search[0].Year;
         var imdburl = "https://imdb.com/title/" + data.Search[0].imdbID + "/";
         var posterurl = data.Search[0].Poster;
-        document.getElementById("answer2").innerHTML = "<h1>" + title + "</h1><br><img src='" + posterurl + "/><br<p>Year Released: "
-          + year + "</p><br><p>IMDb page: <a href=" + imdburl + " target='_blank'>" + "</a></p>";
+        // document.getElementById("answer2").innerHTML = "<h1>" + title + "</h1><br><img src='" + posterurl + "/><br<p>Year Released: "
+        //   + year + "</p><br><p>IMDb page: <a href=" + imdburl + " target='_blank'>" + "</a></p>";
+          moviePoster2.innerHTML=`<img src="${posterurl}" alt="test"/>`;
+        movieTitle2.textContent= title;
       })
     }
     function getanswer3(q) {
@@ -185,14 +201,19 @@
         var year = data.Search[0].Year;
         var imdburl = "https://imdb.com/title/" + data.Search[0].imdbID + "/";
         var posterurl = data.Search[0].Poster;
-        document.getElementById("answer3").innerHTML = "<h1>" + title + "</h1><br><img src='" + posterurl + "/><br<p>Year Released: "
-          + year + "</p><br><p>IMDb page: <a href=" + imdburl + " target='_blank'>" + "</a></p>";
+        // document.getElementById("answer3").innerHTML = "<h1>" + title + "</h1><br><img src='" + posterurl + "/><br<p>Year Released: "
+        //   + year + "</p><br><p>IMDb page: <a href=" + imdburl + " target='_blank'>" + "</a></p>";
+          moviePoster3.innerHTML=`<img src="${posterurl}" alt="test"/>`;
+        movieTitle3.textContent= title;
       })
     }
 
+    
     getanswer("black panther");
     getanswer2("avengers endgame");
     getanswer3("the incredibles");
+
+
 // 
   </script>
 
