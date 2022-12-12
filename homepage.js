@@ -9,6 +9,7 @@ var comedyClick = document.querySelector(".comedy");
 var actionClick = document.querySelector(".action");
 var netflixClick = document.querySelector(".netflix");
 var disneyClick = document.querySelector(".Disney");
+var submitButton = document.querySelector(".submit");
 
 function getLocalStorage(){
   var local = JSON.parse(localStorage.getItem("genrePlatform"));
@@ -67,16 +68,16 @@ function compareChoices(){
 
 
   if (data.genre==="comedy" && data.platform==="netflix"){
-    location.assign("/imdb-netflix-c.html");
+    location.assign("imdb-netflix-c.html");
   }
   if (data.genre==="comedy" && data.platform==="disney"){
-  location.assign("/imdb-disney-c.html"); 
+  location.assign("imdb-disney-c.html"); 
   }
   if (data.genre==="action" && data.platform==="netflix"){
-  location.assign("/imdb-netflix-a.html");
+  location.assign("imdb-netflix-a.html");
   }
 if (data.genre==="action" && data.platform==="disney"){
-  location.assign("/imdb-disney-a.html");
+  location.assign("imdb-disney-a.html");
 }  
 }
 
