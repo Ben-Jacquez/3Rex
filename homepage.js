@@ -47,6 +47,25 @@ function saveDisneyChoice(event) {
   localStorage.setItem("disney", disneyValue);
 }
 
+function compareChoices(){
+  var gotComedyChoice = localStorage.getItem("comedy");
+  var gotActionChoice = localStorage.getItem("action");
+  var gotNetflixChoice = localStorage.getItem("netflix");
+  var gotDisneyChoice = localStorage.getItem("disney");
+
+  if (gotComedyChoice && gotNetflixChoice){
+    location.assign("./imdb-netflix-c.html");
+  }
+  if (gotComedyChoice && gotDisneyChoice){
+  location.assign("./imdb-disney-c.html"); 
+  }
+  if (gotActionChoice && gotNetflixChoice){
+  location.assign("./imdb-netflix-a.html");
+  }
+if (gotActionChoice && gotDisneyChoice){
+  location.assign("./imdb-disney-a.html");
+}  
+}
 // need to local storage get? and run if statement function
 // location.assign("./imdb-disney-a.html");
 // location.assign("./imdb-disney-c.html");
