@@ -1,6 +1,5 @@
 * {
     font-family: 'Bebas Neue';
-
 }
 
 #header-box {
@@ -13,6 +12,7 @@
     width: 100%;
     /* text-shadow: 2px 2px rgb(86, 84, 84); */
     background-color: rgb(255, 255, 255);
+    margin-top: -70px;
 }
 
 body {
@@ -25,7 +25,7 @@ body {
     .logo img{
     float: left;
     margin-left: 50px;
-
+    margin-right: 40px;
     }
 
     .title {
@@ -43,7 +43,7 @@ body {
         flex: auto;
         font-size: 40px;
         padding-top: 100px;
-        margin-left: 150px;
+        /* margin-left: 150px; */
     }
 
     .body-text {
@@ -54,6 +54,7 @@ body {
         font-size: 20px;
     }
 .dropdown-box {
+    /* padding-top: 25px; */
  display: flex;
  justify-content: center;
  text-align: center;
