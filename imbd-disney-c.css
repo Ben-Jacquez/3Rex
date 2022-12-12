@@ -1,3 +1,7 @@
+* {
+    font-family: 'Bebas Neue';
+
+}
 body {
     background-color: rgb(255, 255, 255);
 }
@@ -8,7 +12,7 @@ body {
     font-size: 10px;
     width: 100%;
     /* text-shadow: 2px 2px rgb(86, 84, 84); */
-    background-color: rgb(175, 46, 46);
+    background-color: rgb(45, 170, 0);
     flex-direction: row;
     margin-bottom: 0;
 }
@@ -24,9 +28,10 @@ body {
     margin-bottom: 10px;
     }
 
-.disney img {
-    margin-left: 750px;
-}
+    .disney {
+        display: flex;
+        justify-content: center;
+    }
 
 #nav-home {
     /* float: right; */
