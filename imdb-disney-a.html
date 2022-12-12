@@ -1,53 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Disney-Action</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Limelight&family=Permanent+Marker&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="imbd-disney-a.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Disney-Action</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Limelight&family=Permanent+Marker&family=Roboto&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <!-- HEADER/NAVBAR -->
-    <section>
-      <div id="header-box">
-        <div class="logo">
-          <img
-            src="images/3REX.png"
-            alt="header-logo"
-            width="100"
-            height="90"
-          />
-        </div>
-        <!-- <div class="netflix">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="imbd-disney-a.css" />
+</head>
+
+<body>
+  <!-- HEADER/NAVBAR -->
+  <section>
+    <div id="header-box">
+      <div class="logo">
+        <img src="images/3REX.png" alt="header-logo" width="100" height="90" />
+      </div>
+      <!-- <div class="netflix">
         <img src="images/netflix-logo.png" alt="header-logo" width="400" height="200" />
       </div> -->
-        <div class="home d-flex justify-content-end">
-          <button type="button" id="nav-home" class="btn btn-link">Home</button>
-        </div>
+      <div class="home d-flex justify-content-end">
+        <button type="button" id="nav-home" class="btn btn-link">Home</button>
       </div>
-    </section>
-
-    <div class="disney">
-      <img
-        src="images/disney-logo.png"
-        alt="header-logo"
-        width="400"
-        height="200"
-      />
     </div>
+  </section>
+
+  <div class="disney">
+    <img src="images/disney-logo.png" alt="header-logo" width="400" height="200" />
+  </div>
 
   <!-- CONTAINER OF ALL 3 CARDS -->
   <div class="container text-center ">
@@ -59,7 +45,7 @@
 
           <img src="images/3REX.png" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Movie title</h5>
+            <h5 class="card-title" id="black-panther">Movie title</h5>
             <p class="card-text">Paragraph: IMDb movie info.</p>
 
             <a href="#trailer1" class="btn btn-light">Watch Trailer</a>
@@ -73,7 +59,7 @@
         <div class="card" style="width: 18rem">
           <img src="images/3REX.png" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Movie title</h5>
+            <h5 class="card-title" id="avengers-endgame">Movie title</h5>
             <p class="card-text">Paragraph: IMDb movie info.</p>
 
             <a href="#trailer2" class="btn btn-light">Watch Trailer</a>
@@ -86,7 +72,7 @@
         <div class="card" style="width: 18rem">
           <img src="images/3REX.png" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Movie title</h5>
+            <h5 class="card-title" id="the-incredibles">Movie title</h5>
             <p class="card-text">Paragraph: IMDb movie info.</p>
 
             <a href="#trailer3" class="btn btn-light">Watch Trailer</a>
@@ -99,15 +85,15 @@
 
 
   <!-- BEGINNING OF TRAILER SECTION -->
-  
+
   <hr class="rounded">
 
   <div id="trailer1">
     <div id="movie-title">
-      <h1>Bullet Train</h1>
+      <h1>Black Panther</h1>
     </div>
     <div class="iframe">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/pSd8a1Y05pQ" title="YouTube video player"
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/oHLU3T-e2t4" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
     </div>
@@ -117,53 +103,99 @@
 
   <div id="trailer2">
     <div id="movie-title">
-      <h1>Home Alone</h1>
+      <h1>Avengers Endgame</h1>
     </div>
     <div class="iframe">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/5c-YR89RNNc" title="YouTube video player"
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ee1172yeqyE" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
     </div>
   </div>
 
-  <hr class="dotted"> 
+  <hr class="dotted">
   <!-- ... -->
 
   <div id="trailer3">
     <div id="movie-title">
-      <h1>50 First Dates</h1>
+      <h1>The Incredibles</h1>
     </div>
     <div class="iframe">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Q_2AbjYeSMI" title="YouTube video player"
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/-UaGUdNJdRQ" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
     </div>
   </div>
 
-    <!-- JQUERY -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.min.js"
-      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-      crossorigin="anonymous"
-    ></script>
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
-    <!-- JQUERY? -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
+  <!-- JQUERY? -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
 
-    <!-- BOOTSTRAP JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
-    <!-- JS FOR MODAL -->
-    <script src="./modal.js"></script>
+  <!-- JS FOR MODAL -->
+  <script src="./modal.js"></script>
 
-    <script src="./imdb-hp.js"></script>
-  </body>
+  <script src="./imdb-hp.js"></script>
+
+  <div id="answer"></div>
+  <div id="answer2"></div>
+  <div id="answer3"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    var data;
+    function getanswer(q) {
+      $.get("https://www.omdbapi.com/?s=" + q + "&apikey=443e02", function (rawdata) {
+        var rawstring = JSON.stringify(rawdata);
+        data = JSON.parse(rawstring);
+        var title = data.Search[0].Title;
+        var year = data.Search[0].Year;
+        var imdburl = "https://imdb.com/title/" + data.Search[0].imdbID + "/";
+        var posterurl = data.Search[0].Poster;
+        document.getElementById("answer").innerHTML = "<h1>" + title + "</h1><br><img src='" + posterurl + "/><br<p>Year Released: "
+          + year + "</p><br><p>IMDb page: <a href=" + imdburl + " target='_blank'>" + "</a></p>";
+        document.getElementById("movie-title1").innerHTML = "<h1>" + title + "</h1>"
+      })
+    }
+    function getanswer2(q) {
+      $.get("https://www.omdbapi.com/?s=" + q + "&apikey=443e02", function (rawdata) {
+        var rawstring = JSON.stringify(rawdata);
+        data = JSON.parse(rawstring);
+        var title = data.Search[0].Title;
+        var year = data.Search[0].Year;
+        var imdburl = "https://imdb.com/title/" + data.Search[0].imdbID + "/";
+        var posterurl = data.Search[0].Poster;
+        document.getElementById("answer2").innerHTML = "<h1>" + title + "</h1><br><img src='" + posterurl + "/><br<p>Year Released: "
+          + year + "</p><br><p>IMDb page: <a href=" + imdburl + " target='_blank'>" + "</a></p>";
+      })
+    }
+    function getanswer3(q) {
+      $.get("https://www.omdbapi.com/?s=" + q + "&apikey=443e02", function (rawdata) {
+        var rawstring = JSON.stringify(rawdata);
+        data = JSON.parse(rawstring);
+        var title = data.Search[0].Title;
+        var year = data.Search[0].Year;
+        var imdburl = "https://imdb.com/title/" + data.Search[0].imdbID + "/";
+        var posterurl = data.Search[0].Poster;
+        document.getElementById("answer3").innerHTML = "<h1>" + title + "</h1><br><img src='" + posterurl + "/><br<p>Year Released: "
+          + year + "</p><br><p>IMDb page: <a href=" + imdburl + " target='_blank'>" + "</a></p>";
+      })
+    }
+
+    getanswer("black panther");
+    getanswer2("avengers endgame");
+    getanswer3("the incredibles");
+// 
+  </script>
+
+</body>
+
 </html>
