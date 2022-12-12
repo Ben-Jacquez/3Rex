@@ -11,14 +11,14 @@ $(document).ready(function(){
   var netflixClick =  document.querySelector(".netflix");
   var disneyClick = document.querySelector(".Disney");
 
-
+// local storage set functions for all click events
   function saveComedyChoice(event){
     // console.log("clicked comedy");
     var comedy = event.target;
     // console.log(event)
-    var key = comedy;
-    var value = true;
-    localStorage.setItem(key, value);
+    var comedyKey = comedy;
+    var comedyValue = true;
+    localStorage.setItem("comedy", comedyValue);
 
   }
 
@@ -26,32 +26,32 @@ $(document).ready(function(){
     // console.log("clicked action");
     var action = event.target;
     // console.log(event)
-    var key = action;
-    var value = true;
-    localStorage.setItem(key, value);
+    var actionKey = action;
+    var actionValue = true;
+    localStorage.setItem("action", actionValue);
   }
 
   function saveNetflixChoice(event){
     // console.log("clicked netflix");
     var netflix = event.target;
     // console.log(event)
-    var key = netflix;
-    var value = true;
-    localStorage.setItem(key, value);
+    var netflixKey = netflix;
+    var netflixValue = true;
+    localStorage.setItem("netflix", netflixValue);
   }
 
   function saveDisneyChoice(event){
     // console.log("clicked disney");
     var disney = event.target;
     // console.log(event)
-    var key = disney;
-    var value = true;
-    localStorage.setItem(key, value);
+    var disneyKey = disney;
+    var disneyValue = true;
+    localStorage.setItem("disney", disneyValue);
   }
 
+// need to local storage get and run if statement function
 
-
-
+// event listeners
   comedyClick.addEventListener("click", saveComedyChoice);
   actionClick.addEventListener("click", saveActionChoice);
   netflixClick.addEventListener("click", saveNetflixChoice);
