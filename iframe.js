@@ -9,6 +9,6 @@ const options = {
 fetch('https://online-movie-database.p.rapidapi.com/auto-complete?q=bullet%20train', options)
 	.then(response => response.json())
 	.then(response => console.log(response))
-	.catch(err => console.error(err)):
+	.catch(err => console.error(err))
 
 	

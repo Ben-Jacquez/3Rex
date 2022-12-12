@@ -10,67 +10,76 @@ var actionClick = document.querySelector(".action");
 var netflixClick = document.querySelector(".netflix");
 var disneyClick = document.querySelector(".Disney");
 
+function getLocalStorage(){
+  var local = JSON.parse(localStorage.getItem("genrePlatform"));
+  if (local===null){
+    localStorage.setItem("genrePlatform", JSON.stringify({}));
+  }
+  return JSON.parse(localStorage.getItem("genrePlatform"));
+}
+
 // local storage set functions for all click events
 function saveComedyChoice(event) {
   // console.log("clicked comedy");
   var comedy = event.target;
   // console.log(event)
-  var comedyKey = comedy;
-  var comedyValue = true;
-  localStorage.setItem("comedy", comedyValue);
+
+  // gpuss
+  // get
+  // parse
+  // update
+  // stringify
+  // set
+  var local = getLocalStorage();
+  local.genre = "comedy";
+  localStorage.setItem("genrePlatform", JSON.stringify(local));
 }
 
 function saveActionChoice(event) {
   // console.log("clicked action");
   var action = event.target;
   // console.log(event)
-  var actionKey = action;
-  var actionValue = true;
-  localStorage.setItem("action", actionValue);
+ var local = getLocalStorage();
+ local.genre = "action";
+  localStorage.setItem("genrePlatform", JSON.stringify(local));
 }
 
 function saveNetflixChoice(event) {
   // console.log("clicked netflix");
   var netflix = event.target;
   // console.log(event)
-  var netflixKey = netflix;
-  var netflixValue = true;
-  localStorage.setItem("netflix", netflixValue);
+  var local = getLocalStorage();
+  local.platform = "netflix";
+  localStorage.setItem("genrePlatform", JSON.stringify(local));
 }
 
 function saveDisneyChoice(event) {
   // console.log("clicked disney");
   var disney = event.target;
   // console.log(event)
-  var disneyKey = disney;
-  var disneyValue = true;
-  localStorage.setItem("disney", disneyValue);
+  var local = getLocalStorage();
+  local.platform = "disney";
+  localStorage.setItem("genrePlatform", JSON.stringify(local));
 }
 
 function compareChoices(){
-  var gotComedyChoice = localStorage.getItem("comedy");
-  var gotActionChoice = localStorage.getItem("action");
-  var gotNetflixChoice = localStorage.getItem("netflix");
-  var gotDisneyChoice = localStorage.getItem("disney");
+  var data = JSON.parse(localStorage.getItem("genrePlatform"));
 
-  if (gotComedyChoice && gotNetflixChoice){
-    location.assign("./imdb-netflix-c.html");
+
+  if (data.genre==="comedy" && data.platform==="netflix"){
+    location.assign("/imdb-netflix-c.html");
   }
-  if (gotComedyChoice && gotDisneyChoice){
-  location.assign("./imdb-disney-c.html"); 
+  if (data.genre==="comedy" && data.platform==="disney"){
+  location.assign("/imdb-disney-c.html"); 
   }
-  if (gotActionChoice && gotNetflixChoice){
-  location.assign("./imdb-netflix-a.html");
+  if (data.genre==="action" && data.platform==="netflix"){
+  location.assign("/imdb-netflix-a.html");
   }
-if (gotActionChoice && gotDisneyChoice){
-  location.assign("./imdb-disney-a.html");
+if (data.genre==="action" && data.platform==="disney"){
+  location.assign("/imdb-disney-a.html");
 }  
 }
-// need to local storage get? and run if statement function
-// location.assign("./imdb-disney-a.html");
-// location.assign("./imdb-disney-c.html");
-// location.assign("./imdb-netflix-a.html");
-// location.assign("./imdb-netflix-c.html");
+
 
 // event listeners
 comedyClick.addEventListener("click", saveComedyChoice);
