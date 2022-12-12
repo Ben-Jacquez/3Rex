@@ -77,6 +77,17 @@ body {
     background-color: rgba(160, 213, 140, 0.987);
 }
 
+
+.submit {
+    width: 20%;
+    background-color: rgb(48, 105, 67);
+    padding: 10px;
+    font-size: 20px;
+    align-items: center;
+   margin-bottom: 30px;
+   margin-top: 10px;
+}
+
 .dropdown-item {
     width: 1110px;
     text-align: center;
