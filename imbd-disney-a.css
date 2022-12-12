@@ -35,6 +35,14 @@ body {
         justify-content: center;
     }
 
+    .blurb {
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -50px;
+        color: rgb(53, 73, 124);
+      }
 
 #nav-home {
     /* float: right; */
