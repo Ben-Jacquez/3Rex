@@ -12,6 +12,7 @@
     width: 100%;
     /* text-shadow: 2px 2px rgb(86, 84, 84); */
     background-color: rgb(255, 255, 255);
+    margin-top: -70px;
 }
 
 body {
@@ -24,7 +25,7 @@ body {
     .logo img{
     float: left;
     margin-left: 50px;
-
+    /* margin-top: -90px; */
     }
 
     .title {
@@ -53,6 +54,7 @@ body {
         font-size: 20px;
     }
 .dropdown-box {
+    /* padding-top: 25px; */
  display: flex;
  justify-content: center;
  text-align: center;
