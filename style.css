@@ -104,8 +104,11 @@ body {
 }
 
 .carousel-slide {
-    width:640px;
-  height:360px;
+    display: flex;
+    align-items: center;
+    width:1920px;
+  height:1080px;
+
 }
   
   .d-block {
