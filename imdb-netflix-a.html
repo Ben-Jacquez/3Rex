@@ -32,7 +32,7 @@
   </section>
 
   <div class="netflix">
-    <img src="images/netflix-logo.png" alt="header-logo" width="400" height="200" />
+    <img src="images/netflix-logo.png" alt="netflix-logo" width="400" height="200" />
   </div>
 
   <br>
@@ -173,7 +173,7 @@ var movieTitle3=document.querySelector(".movie-title3");
         var posterurl = data.Search[0].Poster;
         // document.getElementById("answer").innerHTML = "<h1>" + title + "</h1><br><img src='" + posterurl + "/><br<p>Year Released: "
         //   + year + "</p><br><p>IMDb page: <a href=" + imdburl + " target='_blank'>" + "</a></p>";
-        moviePoster1.innerHTML=`<img src="${posterurl}" alt="test"/>`;
+        moviePoster1.innerHTML=`<img src="${posterurl}" alt="zero-dark-thirty-movie-poster"/>`;
         movieTitle1.textContent= title;
       })
     }
@@ -187,7 +187,7 @@ var movieTitle3=document.querySelector(".movie-title3");
         var posterurl = data.Search[0].Poster;
         // document.getElementById("answer2").innerHTML = "<h1>" + title + "</h1><br><img src='" + posterurl + "/><br<p>Year Released: "
         //   + year + "</p><br><p>IMDb page: <a href=" + imdburl + " target='_blank'>" + "</a></p>";
-          moviePoster2.innerHTML=`<img src="${posterurl}" alt="test"/>`;
+          moviePoster2.innerHTML=`<img src="${posterurl}" alt="salt-movie-poster"/>`;
         movieTitle2.textContent= title;
       })
     }
@@ -201,7 +201,7 @@ var movieTitle3=document.querySelector(".movie-title3");
         var posterurl = data.Search[0].Poster;
         // document.getElementById("answer3").innerHTML = "<h1>" + title + "</h1><br><img src='" + posterurl + "/><br<p>Year Released: "
         //   + year + "</p><br><p>IMDb page: <a href=" + imdburl + " target='_blank'>" + "</a></p>";
-          moviePoster3.innerHTML=`<img src="${posterurl}" alt="test"/>`;
+          moviePoster3.innerHTML=`<img src="${posterurl}" alt="bullet-train-movie-poster"/>`;
         movieTitle3.textContent= title;
       })
     }
