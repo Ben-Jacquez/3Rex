@@ -10,12 +10,13 @@ function changeGenreText(e){
     dropdownGenre.textContent = e.target.textContent;
 }
 
-
-
+function changePlatformText(e){
+    dropdownPlatform.textContent = e.target.textContent;
+}
 
 dropdownAction.addEventListener('click', changeGenreText)
 dropdownComedy.addEventListener('click', changeGenreText)
-// dropdownNetflix.addEventListener('click', )
-// dropdownDisney.addEventListener('click',)
 
+dropdownNetflix.addEventListener('click', changePlatformText)
+dropdownDisney.addEventListener('click', changePlatformText)
 
