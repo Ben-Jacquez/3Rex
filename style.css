@@ -189,7 +189,7 @@ body {
   @media only screen and (max-width: 768px) {
     .title .intro {
         flex-shrink: 1;
-        flex-direction: column-reverse;
+        flex-direction: column;
          flex-wrap: wrap;
      }
    }

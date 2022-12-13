@@ -8,6 +8,8 @@ var dropdownDisney = document.querySelector('.disney');
 
 function changeGenreText(e){
     dropdownGenre.textContent = e.target.textContent;
+    var newGenre = e.target.textContent;
+    newGenre.setAttribute("style", "color: ")
 }
 
 function changePlatformText(e){
