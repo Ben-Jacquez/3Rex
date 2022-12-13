@@ -1,8 +1,6 @@
-* {
-    font-family: 'Bebas Neue';
 
-}
 body {
+    font-family: 'Bebas Neue';
     background-color: rgb(255, 255, 255);
 }
 
@@ -35,6 +33,7 @@ body {
     }
 
     .blurb {
+        font-family: 'Permanent Marker', cursive;
       font-size: 30px;
       display: flex;
       align-items: center;

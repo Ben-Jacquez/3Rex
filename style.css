@@ -28,6 +28,7 @@ body {
         }
     
     .logo img{
+        flex-direction: column;
     float: left;
     margin-left: 50px;
     margin-right: 40px;
@@ -85,7 +86,7 @@ body {
 
 .submit {
     width: 20%;
-    background-color: rgb(6, 79, 29);
+    background-color: rgb(10, 68, 29);
     padding: 10px;
     font-size: 20px;
     align-items: center;
