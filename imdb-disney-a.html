@@ -32,7 +32,7 @@
   </section>
 
   <div class="disney">
-    <img src="images/disney-logo.png" alt="header-logo" width="400" height="200" />
+    <img src="images/disney-logo.png" alt="disney-logo" width="400" height="200" />
   </div>
 
   <br>
@@ -177,7 +177,7 @@ var movieTitle3=document.querySelector(".movie-title3");
         var posterurl = data.Search[0].Poster;
         // document.getElementById("answer").innerHTML = "<h1>" + title + "</h1><br><img src='" + posterurl + "/><br<p>Year Released: "
         //   + year + "</p><br><p>IMDb page: <a href=" + imdburl + " target='_blank'>" + "</a></p>";
-        moviePoster1.innerHTML=`<img src="${posterurl}" alt="test"/>`;
+        moviePoster1.innerHTML=`<img src="${posterurl}" alt="black-panther-movie-poster"/>`;
         movieTitle1.textContent= title;
       })
     }
@@ -191,7 +191,7 @@ var movieTitle3=document.querySelector(".movie-title3");
         var posterurl = data.Search[0].Poster;
         // document.getElementById("answer2").innerHTML = "<h1>" + title + "</h1><br><img src='" + posterurl + "/><br<p>Year Released: "
         //   + year + "</p><br><p>IMDb page: <a href=" + imdburl + " target='_blank'>" + "</a></p>";
-          moviePoster2.innerHTML=`<img src="${posterurl}" alt="test"/>`;
+          moviePoster2.innerHTML=`<img src="${posterurl}" alt="avengers-endgame-movie-poster"/>`;
         movieTitle2.textContent= title;
       })
     }
@@ -205,7 +205,7 @@ var movieTitle3=document.querySelector(".movie-title3");
         var posterurl = data.Search[0].Poster;
         // document.getElementById("answer3").innerHTML = "<h1>" + title + "</h1><br><img src='" + posterurl + "/><br<p>Year Released: "
         //   + year + "</p><br><p>IMDb page: <a href=" + imdburl + " target='_blank'>" + "</a></p>";
-          moviePoster3.innerHTML=`<img src="${posterurl}" alt="test"/>`;
+          moviePoster3.innerHTML=`<img src="${posterurl}" alt="the-incredibles-movie-poster"/>`;
         movieTitle3.textContent= title;
       })
     }
