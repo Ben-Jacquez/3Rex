@@ -8,7 +8,7 @@
 var comedyClick = document.querySelector(".comedy");
 var actionClick = document.querySelector(".action");
 var netflixClick = document.querySelector(".netflix");
-var disneyClick = document.querySelector(".Disney");
+var disneyClick = document.querySelector(".disney");
 var submitButton = document.querySelector(".submit");
 
 function getLocalStorage(){
