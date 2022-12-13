@@ -18,7 +18,6 @@ function getLocalStorage(){
   }
   return JSON.parse(localStorage.getItem("genrePlatform"));
 }
-
 // local storage set functions for all click events
 function saveComedyChoice(event) {
   // console.log("clicked comedy");
