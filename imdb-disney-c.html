@@ -16,7 +16,7 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="imbd-disney-c.css" />
+    <link rel="stylesheet" href="imbd-disney-c.css" alt="disney-logo" />
   </head>
 
   <body>
@@ -43,7 +43,7 @@
     <div class="disney">
       <img
         src="images/disney-logo.png"
-        alt="header-logo"
+        alt="disney-logo"
         width="400"
         height="200"
       />
@@ -63,7 +63,7 @@
 
           <div class="movie-poster1"></div>
           <div class="card-body">
-            <h5 class="card-title movie-title1">Movie title</h5>
+            <h5 class="card-title movie-title1" id="deadpool"></h5>
             <!-- <p class="card-text">Paragraph: IMDb movie info.</p> -->
 
             <a href="#trailer1" class="btn btn-light">Watch Trailer</a>
@@ -77,7 +77,7 @@
         <div class="card" style="width: 20rem">
           <div class="movie-poster2"></div>
           <div class="card-body">
-            <h5 class="card-title movie-title2">Movie title</h5>
+            <h5 class="card-title movie-title2" id="home-alone"></h5>
             <!-- <p class="card-text">Paragraph: IMDb movie info.</p> -->
 
             <a href="#trailer2" class="btn btn-light">Watch Trailer</a>
@@ -90,7 +90,7 @@
         <div class="card" style="width: 20rem">
           <div class="movie-poster3"></div>
           <div class="card-body">
-            <h5 class="card-title movie-title3">Movie title</h5>
+            <h5 class="card-title movie-title3" id="goofy"></h5>
             <!-- <p class="card-text">Paragraph: IMDb movie info.</p> -->
 
             <a href="#trailer3" class="btn btn-light">Watch Trailer</a>
@@ -196,7 +196,7 @@
           var posterurl = data.Search[0].Poster;
           // document.getElementById("answer").innerHTML = "<h1>" + title + "</h1><br><img src='" + posterurl + "/><br<p>Year Released: "
           //   + year + "</p><br><p>IMDb page: <a href=" + imdburl + " target='_blank'>" + "</a></p>";
-          moviePoster1.innerHTML=`<img src="${posterurl}" alt="test"/>`;
+          moviePoster1.innerHTML=`<img src="${posterurl}" alt="deadpool-movie-poster"/>`;
           movieTitle1.textContent= title;
         })
       }
@@ -210,7 +210,7 @@
           var posterurl = data.Search[0].Poster;
           // document.getElementById("answer2").innerHTML = "<h1>" + title + "</h1><br><img src='" + posterurl + "/><br<p>Year Released: "
           //   + year + "</p><br><p>IMDb page: <a href=" + imdburl + " target='_blank'>" + "</a></p>";
-            moviePoster2.innerHTML=`<img src="${posterurl}" alt="test"/>`;
+            moviePoster2.innerHTML=`<img src="${posterurl}" alt="home-alone-movie-poster"/>`;
           movieTitle2.textContent= title;
         })
       }
@@ -224,7 +224,7 @@
           var posterurl = data.Search[0].Poster;
           // document.getElementById("answer3").innerHTML = "<h1>" + title + "</h1><br><img src='" + posterurl + "/><br<p>Year Released: "
           //   + year + "</p><br><p>IMDb page: <a href=" + imdburl + " target='_blank'>" + "</a></p>";
-            moviePoster3.innerHTML=`<img src="${posterurl}" alt="test"/>`;
+            moviePoster3.innerHTML=`<img src="${posterurl}" alt="goofy-movie-movie-poster"/>`;
           movieTitle3.textContent= title;
         })
       }
