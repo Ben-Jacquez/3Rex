@@ -7,12 +7,17 @@
     align-items: center;
     text-align: center;
     text-decoration: rgb(255, 255, 255);
-    font-weight: bolder;
     font-size: 10px;
     width: 100%;
     /* text-shadow: 2px 2px rgb(86, 84, 84); */
     background-color: rgb(255, 255, 255);
     margin-top: -70px;
+}
+
+.title .intro {
+    font-size: 50px;
+    margin-right: 0px;
+    margin-bottom: -30px;
 }
 
 body {
@@ -86,6 +91,11 @@ body {
     align-items: center;
    margin-bottom: 30px;
    margin-top: 10px;
+}
+
+.submit:hover {
+    background-color: rgb(97, 148, 113);
+
 }
 
 .dropdown-item {
