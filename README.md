@@ -2,7 +2,7 @@
 
 ## Description
 
-This movie recommendation application, named "3REX," features dynamically updated HyperText Markup Language (HTML) and Cascading Style Sheet (CSS) powered by JavaScript, third party Application Programming Interface (API), jQuery, featuring server-side APIs OMDb and YouTube. In this application, once the user enters their selected criteria for genre and platform, our application goes to work to find the perfect movie recommendation. The user can select from two options for genre and two options for streaming platform, and the application directs the user to the corresponding page that reflects three movie recommendations based on the selections. 
+This movie recommendation application, named "3REX," features dynamically updated HyperText Markup Language (HTML) and Cascading Style Sheet (CSS) powered by JavaScript, third party Application Programming Interface (API), jQuery, Bootstrap, Google Fonts, featuring server-side APIs OMDb and YouTube. In this application, once the user enters their selected criteria for genre and platform, our application goes to work to find the perfect movie recommendation. The user can select from two options for genre and two options for streaming platform, and the application directs the user to the corresponding page that reflects three movie recommendations based on the selections. 
 
 ## Screenshot
 
