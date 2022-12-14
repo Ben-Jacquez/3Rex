@@ -12,6 +12,18 @@ This movie recommendation application, named "3REX," features dynamically update
 
 https://ben-jacquez.github.io/3Rex/
 
+## Credits
+
+Collaborators:
+Benjamin Jacquez (https://github.com/Ben-Jacquez), Vanessa Chan (https://github.com/vchan852), Sara Angelo (https://github.com/saramangelo)
+
+APIs:
+OMDb: https://www.omdbapi.com/
+YouTube: https://developers.google.com/youtube/iframe_api_reference
+
+Tutorial Credit: https://www.youtube.com/watch?v=67eJTr6_ylY&ab_channel=Cukmekerb%27sCodingClass
+
+
 ## License
 
 MIT License
