@@ -180,13 +180,13 @@ body {
   }
 
 
-  @media only screen and (min-width: 1290px) {
+  /* @media only screen and (min-width: 1290px) {
     .title .intro {
         flex-shrink: 1;
         flex-direction: column;
          flex-wrap: wrap;
      }
-   } 
+   }  */
 
   @media only screen and (max-width: 1273px) {
  .title .intro {
