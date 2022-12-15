@@ -2,7 +2,8 @@
 
 ## Description
 
-This movie recommendation application, named "3REX," features dynamically updated HyperText Markup Language (HTML) and Cascading Style Sheet (CSS) powered by JavaScript, third party Application Programming Interface (API), jQuery, Bootstrap, Google Fonts, featuring server-side APIs OMDb and YouTube. In this application, once the user enters their selected criteria for genre and platform, our application goes to work to find the perfect movie recommendation. The user can select from two options for genre and two options for streaming platform, and the application directs the user to the corresponding page that reflects three movie recommendations based on the selections. 
+This movie recommendation application, named "3REX," features dynamically updated HyperText Markup Language (HTML) and Cascading Style Sheet (CSS) powered by JavaScript, third party Application Programming Interfaces (APIs), jQuery, Bootstrap, Google Fonts, featuring 
+Server-Side APIs OMDb and YouTube. In this application, once the user enters their selected criteria for genre and platform, our application goes to work to find the perfect movie recommendation. The user can select from two options for genre and two options for streaming platform, and the application directs the user to the corresponding page that reflects three movie recommendations based on the selections. 
 
 ## Screenshot
 
@@ -18,6 +19,13 @@ Collaborators:
 Benjamin Jacquez (https://github.com/Ben-Jacquez), Vanessa Chan (https://github.com/vchan852), Sara Angelo (https://github.com/saramangelo)
 
 APIs:
+
+Third-Party:
+Bootstrap: https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js
+jQuery: https://code.jquery.com/jquery-3.6.2.min.js
+Google Fonts: https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Limelight&family=Permanent+Marker&family=Roboto&display=swap
+
+Server-Side:
 OMDb: https://www.omdbapi.com/
 YouTube: https://developers.google.com/youtube/iframe_api_reference
 
